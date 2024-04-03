@@ -1,3 +1,4 @@
+import MobileNav from "@/components/MobileNav";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -13,10 +14,11 @@ const Navbar = () => {
 					alt="Zoom logo"
 					className="max-sm:size-10"
 				/>
-				<p className="text-[26px] font-extrabold text-white max-sm:hidden">
-					Zoom
-				</p>
+				<p className="text-[26px] font-extrabold text-white max-sm:hidden">Zoom</p>
 			</Link>
+			<div className="flex-between gap-5">
+				<MobileNav />
+			</div>
 		</nav>
 	);
 };
