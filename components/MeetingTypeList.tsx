@@ -19,7 +19,7 @@ const MeetingTypeList = () => {
 		description: "",
 		link: "",
 	});
-	const [callDeatil, setCallDetail] = useState<Call>();
+	const [callDetil, setCallDetail] = useState<Call>();
 
 	const createMeeting = async () => {
 		if (!client || !user) {
